@@ -1,0 +1,37 @@
+require:
+  - rubocop-rails
+  - rubocop-perfomance
+
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable #rubocopの新機能をactiveにする
+  Exclude:
+    - "assets/**/*"
+    - "bin/**/*"
+    - "db/schema.rb"
+    - "log/**/*"
+    - "node_modules/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+
+# 日本語のコメントを許可
+Style/AsciiComments:
+  Enabled: false
+
+#ドキュメントの無い public class を許可
+Style/Documentation:
+  Enabled: false
+
+# 1行の最大
+Layout/LineLength:
+  Max: 160
+
+# 文字列はダブルクォートに統一
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+# %iを使用を強制を解除(使用しても使用しなくてもOKにする)
+Style?WordArray:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
