@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -37,15 +39,15 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 # ログイン機能
-gem 'devise'
+gem "devise"
 # 多言語対応
-gem 'rails-i18n'
-gem 'devise-i18n'
+gem "devise-i18n"
+gem "rails-i18n"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -55,11 +57,11 @@ gem 'devise-i18n'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem 'pry-byebug'
-  gem 'pry-rails'
-  gem 'rubocop-rails', require: false
-  gem 'rubocop-performance', require: false
+  gem "debug", platforms: %i[mri mingw x64_mingw]
+  gem "pry-byebug"
+  gem "pry-rails"
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
 end
 
 group :development do
@@ -72,4 +74,3 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-

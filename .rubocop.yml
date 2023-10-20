@@ -1,9 +1,9 @@
 require:
   - rubocop-rails
-  - rubocop-perfomance
+  - rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.2.2
   NewCops: enable #rubocopの新機能をactiveにする
   Exclude:
     - "assets/**/*"
@@ -30,7 +30,7 @@ Layout/LineLength:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 # %iを使用を強制を解除(使用しても使用しなくてもOKにする)
-Style?WordArray:
+Style/WordArray:
   Enabled: false
 
 Style/SymbolArray:
