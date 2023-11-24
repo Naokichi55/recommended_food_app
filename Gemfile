@@ -46,9 +46,9 @@ gem "bootsnap", require: false
 # ログイン機能
 gem "devise"
 # 多言語対応
+gem "active_storage_validations"
 gem "devise-i18n"
 gem "rails-i18n"
-gem "active_storage_validations"
 
 # Use Sass to process CSS
 # gem "sassc-rails"

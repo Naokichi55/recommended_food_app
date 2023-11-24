@@ -26,10 +26,9 @@ user1.foods.create!(
   name: "木苺",
   avatar: {
     io: URI.parse("https://picsum.photos/id/102/300/300").open,
-    filename: "sceney.jpg" 
+    filename: "sceney.jpg"
   }
 )
-
 
 User.create!(email:, password:)
 
