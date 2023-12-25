@@ -1,0 +1,14 @@
+<%= form_with model: @food do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name, required: true %>
+  <br>
+  <p>
+    <%= form.file_field :avatar, accept: "image/png,image/jpeg,image/gif" %>
+  </p>
+  <br>
+  <%= form.label :comment%>
+  <%= form.text_area :comment %>
+  <br>
+  <br>
+  <%= form.submit "送信" %>
+<% end %>

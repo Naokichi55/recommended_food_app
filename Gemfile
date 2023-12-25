@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 # ログイン機能
 gem "devise"
 # 多言語対応
+gem "active_storage_validations"
 gem "devise-i18n"
 gem "rails-i18n"
 
@@ -53,7 +54,7 @@ gem "rails-i18n"
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
