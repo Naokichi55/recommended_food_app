@@ -7,6 +7,7 @@
   </div>
 <% end %>
 <p>【コメント】<%= simple_format(h @food.comment) %></p>
+<%= render"like", food: @food %>
 <p>
   <% if current_user.id == @food.user_id %>
     <%= link_to "編集", edit_food_path(@food) %>

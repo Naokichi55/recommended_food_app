@@ -1,0 +1,11 @@
+<% unless defined?(is_liked) %>
+  <% is_liked = food.liked_by?(current_user) %>
+<% end %>
+
+<p id="<%= dom_id(food, :like) %>">
+  <% if is_liked %>
+    <%= link_to "★", food_likes_path(food), data: { turbo_method: :delete } %>
+  <% else %>
+    <%= link_to "☆", food_likes_path(food), data: { turbo_method: :post } %>
+  <% end %>  
+</p>

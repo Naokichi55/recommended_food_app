@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+class Like < ApplicationRecord
+  belongs_to :user
+  belongs_to :food
+
+  validates :user_id, uniqueness: {
+    scope: :food_id,
+    message: :duplicated
+  }
+end
