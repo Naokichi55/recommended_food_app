@@ -1,0 +1,4 @@
+<%# ☆ をおしたとき（「いいね！」にしたとき）に動作 %>
+<%= turbo_stream.replace dom_id(@food, :like) do %>
+  <%= render "foods/like", food: @food, is_liked: true %>
+<% end %>
